@@ -4,7 +4,7 @@
 	background: #ffffff;
 	padding: 15px;
 	border: 1px solid #F5F5F5;
-	box-shadow: -20px -20px 60px #FFFFFF, 20px 20px 60px rgba(217, 217, 217, 0.2);
+	/*box-shadow: -20px -20px 60px #FFFFFF, 20px 20px 60px rgba(217, 217, 217, 0.2);*/
 	border-radius: 4px;
 
 	.tempo-container {
@@ -110,6 +110,7 @@
 	.tempo-info {
 		padding-top: 10px;
 		width: 100%;
+		text-align: center;
 		@include clear;
 
 		.info-item {
@@ -129,12 +130,28 @@
 				padding-right: 0;
 			}
 
+			div {
+				width: 22px;
+				height: 22px;
+				display: block;
+				margin: 0 auto;
+
+				img {
+					vertical-align: middle;
+				}
+			}
+
 			span {
 				margin-top: 5px;
 				font-size: .75rem;
 				line-height: .875rem;
 				display: block;
+				white-space: nowrap;
 			}
+
+			/*@media all and (max-width: 1130px){
+				padding: 0 3px;
+			}*/
 		}
 	}
 }
@@ -142,20 +159,29 @@
 .widget-tempo-resumo {
 	padding: 35px;
 
+	@media all and (max-width: 600px){
+		padding: 15px;
+	}
+
 	.tempo-container {
 		display: flex;
 		flex-direction: row;
 		align-items: stretch;
 		justify-content: space-between;
-	}
-
-	.tempo-header, .tempo-content {
 		
+		@media all and (max-width: 880px){
+			flex-direction: column;
+		}
 	}
 
 	.tempo-header {
 		padding-right: 50px;
 		padding-bottom: 48px;
+
+		@media all and (max-width: 500px){
+			text-align: center;
+			padding-bottom: 0;
+		}
 
 		.local {
 			width: auto;
@@ -177,13 +203,35 @@
 				position: relative;
 				top: 3px;
 			}
+			
+			@media all and (max-width: 500px){
+				position: relative;
+				margin: 15px 0 0;
+			}
+		}
+
+		@media all and (max-width: 880px){
+			padding-right: 0px;
+			margin-bottom: 30px;
 		}
 	}
 
 	.tempo-content {
 		padding-left: 50px;
 		border-left: 1px solid #ECECEC;
-		//width: 430px;
+		min-width: 420px;
+		
+		/*@media all and (max-width: 1100px){
+			min-width: 360px;
+		}*/
+
+		@media all and (max-width: 880px){
+			padding-left: 0;
+			border: none;
+			min-width: 0px;
+			display: flex;
+			flex-direction: column;
+		}
 	}
 
 	.tempo-dia {
@@ -195,6 +243,28 @@
 			display: block;
 			margin-right: 0;
 		}
+
+		/*@media all and (max-width: 1100px){
+			padding-right: 5px;
+		}*/
+
+		@media all and (max-width: 500px){
+			width: auto;
+			padding-right: 0;
+			float: none;
+			margin: 0 auto 20px;
+			position: relative;
+			padding-left: 45px;
+
+			img {
+				float: left;
+				display: block;
+				position: absolute;
+				top: 0;
+				left: 0;
+				margin: 0;
+			}
+		}
 	}
 
 	.tempo-min-max {
@@ -205,6 +275,10 @@
 		.min-max-item {
 			&:first-child {
 				padding-right: 40px;
+
+				/*@media all and (max-width: 1100px){
+					padding-right: 20px;
+				}*/
 			}
 		}
 
@@ -229,6 +303,16 @@
 				font-size: 1.25rem;
 			}
 		}
+
+		@media all and (max-width: 500px){
+			width: 100%;
+			padding-left: 0;
+
+			.min-max-item {
+				float: none;
+				display: inline-block;
+			}
+		}
 	}
 
 	.tempo-info {
@@ -241,11 +325,111 @@
 			width: 100%;
 			margin-top: 0;
 		}
+
+		@media all and (max-width: 500px){
+			padding-top: 30px;
+		}
 	}
 }
 
-.carousel {
-	.carousel-item {
-		width: 25%;
+.owl-carousel {
+	&.owl-theme {
+
+		.owl-item {
+
+			.widget-tempo {
+				//max-width: 260px;
+				//margin: 0 auto;
+			}
+		}
+
+		.owl-nav {
+			position: absolute;
+			height: 0;
+			top: 50%;
+			width: 100%;
+			margin-top: -30px;
+
+			.owl-prev, .owl-next {
+				position: absolute;
+				top: -3px;
+				width: 25px;
+				height: 25px;
+				border: 1px solid rgba($cor1,.3);
+				border-radius: 4px;
+				line-height: 0;
+				background: transparent;
+
+				i {
+					font-size: 10px;
+					color: $cor1;
+				}
+
+				&.disabled {
+					opacity: .3;
+				}
+
+				&:hover:not(.disabled) {
+					background: $cor1;
+
+					i {
+						color: #ffffff;
+					}
+				}
+			}
+
+			.owl-prev {
+				left: -50px;
+			}
+
+			.owl-next {
+				right: -50px;
+			}
+
+			@media all and (max-width: 700px){
+				display: none;
+				/*
+				top: unset;
+				height: auto;
+				margin: 0 auto;
+				bottom: -4px;
+
+				.owl-prev, .owl-next {
+					position: relative;
+					top: 0;
+				}
+
+				.owl-prev {
+					left: 0px;
+				}
+
+				.owl-next {
+					right: 0px;
+				}
+				*/
+			}
+		}
+
+		.owl-dots {
+			margin-top: 30px;
+
+			.owl-dot {
+				margin: 0 6px;
+				background: transparent;
+
+				span {
+					margin: 0;
+					width: 8px;
+					height: 8px;
+					background: rgba($cor1, .3);
+				}
+
+				&.active {
+					span {
+						background: $cor1;
+					}
+				}
+			}
+		}
 	}
 }
