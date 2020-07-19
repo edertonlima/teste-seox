@@ -1,0 +1,40 @@
+.box-anuncio {
+	position: relative;
+	z-index: 0;
+	max-width: 100%;
+
+	img {
+		display: block;
+		width: 100%;
+	}
+
+	&.box-anuncio-header {
+		display: block;
+		margin: 0 auto 50px;
+		width: 728px;
+		overflow: hidden;
+	}
+
+	.btn-anuncio-close {
+		width: 20px;
+		height: 20px;
+		background-color: #E2E2E2;
+		position: absolute;
+		right: 1px;
+		top: 0;
+		cursor: pointer;
+		z-index: 1;
+		display: flex;
+		align-items: center;
+		@include animacao;
+
+		img {
+			width: 9px;
+			margin: 0 auto;
+		}
+
+		&:hover {
+			background-color: darken(#E2E2E2, 5%);
+		}
+	}
+}

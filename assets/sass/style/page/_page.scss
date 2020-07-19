@@ -1,0 +1,23 @@
+.registre-receba {
+	width: 100%;
+	height: 100%;
+	background-color: $cor1;
+	padding: 25px;
+	box-shadow: -20px -20px 60px #FFFFFF, 20px 20px 60px rgba(217, 217, 217, 0.2);
+	border-radius: 4px;
+	background-image: url('../images/bg-cadastrese.svg');
+	background-position: bottom right;
+	background-repeat: no-repeat;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	h4 {
+		color: #ffffff;
+	}
+
+	.btn {
+		margin-top: 20px;
+	}
+}

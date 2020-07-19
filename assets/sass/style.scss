@@ -1,0 +1,43 @@
+@import 'bootstrap4.0/bootstrap';
+
+@import 'style/_mixin';
+@import 'style/_reset';
+@import 'style/_variaveis';
+@import 'style/_fonts';
+
+
+// estrutura
+@import 'style/_estrutura';
+@import 'style/_elementos'; 
+//@import 'style/_form';
+//@import 'style/_modal';
+//@import 'style/_nav';
+//@import 'style/_slide';
+//@import 'style/_header';
+//@import 'style/_footer';
+@import 'style/_cores';  
+
+
+// plugins
+// scrollbar
+//@import 'style/_scrollbar';  
+
+// owl carousel
+//@import 'owl-carousel/owl.carousel'; 
+//@import 'owl-carousel/_theme.default';
+
+// horizontal timeline
+//@import 'horizontal-timeline/horizontal-timeline'; 
+
+
+// widget
+@import 'style/widget/_tempo'; 
+@import 'style/widget/_anuncio'; 
+
+
+// page
+@import 'style/page/_page'; 
+
+
+// mobile
+@import 'style/_mobile'; 
