@@ -1,0 +1,278 @@
+/*
+ *  header padrão, grupo de botões
+ */
+ 
+.header-group-btn {
+	margin-bottom: 30px;
+	display: flex;
+	align-items: center;
+
+	.interesses-post {
+		margin-left: 100px;
+		display: flex;
+		align-items: center;		
+
+		.btn-item-interesses {
+			margin-left: 5px;
+		}
+	}
+
+	h2 {
+		display: flex;
+		align-items: center;
+		font-size: 32px;
+		font-weight: $bold;
+		margin-bottom: 0;
+
+		.ico-svg {
+			margin-right: 10px;
+		}
+	}
+
+	.btn-default {
+		height: 30px;
+		line-height: 30px;
+	}	
+
+	.flex-right {
+		margin-left: auto;
+	}
+
+	.btn-veja-mais {
+
+	}
+}
+
+/*
+ *  fim header padrão, grupo de botões
+ */
+
+@include separacao;
+
+ /*
+ *  post / post vídeo
+ */
+
+.list-post {
+	width: 100%;
+	border-radius: 4px;
+	overflow: hidden;
+	//box-shadow: -20px -20px 60px #FFFFFF, 20px 20px 60px rgba(217, 217, 217, 0.2);
+
+	a {
+		display: block;
+		&:hover {
+			text-decoration: none;
+		}
+	}
+
+	.post-img {
+		height: 153px;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+
+		img {
+			object-fit: cover;
+			width: 100%;
+			height: 153px;
+		}
+	}
+
+	.list-post-content {
+		display: block;
+		padding: 15px;
+		background-color: #ffffff;
+	}
+
+	.post-categoria, .post-date	{
+		color: $cor-txt-claro;
+	}
+
+	.post-categoria, h3, .post-date	{
+		line-height: normal;
+	}
+
+	.post-categoria, h3 {
+		font-size: 16px;
+	}
+
+	h3 {
+		line-height: 21.6px;
+		display: block;
+		margin: 5px 0 10px;
+		font-weight: $bold;
+		color: $cor-txt;
+		@include animacao;
+
+		&:hover {
+			//color: $cor1;
+		}
+	}
+
+	.post-date {
+		font-size: 14px;
+	}
+
+	&.video {
+		.list-post-content {
+			background-color: #292B27; 
+		}
+
+		.post-categoria, .post-date	{
+			color: rgba(#ffffff, .5);
+		}
+
+		h3 {
+			font-weight: $regular;
+			color: #ffffff;
+
+			&:hover {
+				//color: $cor1;
+			}
+		}
+
+		.post-img {
+			position: relative;
+
+			&:before {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				z-index: 0;
+				background-color: rgba(#000000, .4); 
+			}
+
+			.ico-svg {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%,-50%);
+				z-index: 1;
+			}
+
+			.tempo-video {
+				position: absolute;
+				bottom: 10px;
+				right: 10px;
+				font-size: 14px;
+				line-height: 21px;
+				color: #ffffff;
+				background-color: rgba(#000000, .7);
+				padding: 0 8px; 
+			}
+		}
+	}
+}
+
+
+.preview-video {
+
+	.bg-capa-video {
+		background-position: center right;
+		background-repeat: no-repeat;
+		background-size: cover;
+		position: absolute;
+		top: 0;
+		right: 0;
+		z-index: 0;
+		width: 50%;
+		height: 100%;
+
+		&:before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: linear-gradient(360deg, #1E201C 0%, rgba(30, 32, 28, 0) 29.06%), linear-gradient(90deg, #1E201C 0%, rgba(30, 32, 28, 0) 100%);
+			//@include gradiente(90,$bgdark,rgba($bgdark,0));
+			z-index: 1;
+		}
+	}
+
+	.label-categoria {
+		font-size: 14px;
+		color: #ffffff;
+		border: 1px solid rgba(#ffffff,.5);
+		line-height: 30px;
+		padding: 0 15px;
+		display: inline-block;
+		font-weight: $bold;
+		margin-left: 18px;
+		border-radius: 4px;
+	}
+
+	.content-preview-video {
+		max-width: 480px;
+		width: 100%;
+
+		.header-group-btn {
+			h2 {
+				margin-bottom: 0;
+				font-size: 18px;
+			}
+		}
+
+		.btn-item-interesses {
+			&:hover {
+				background-color: $cor1;
+				color: #ffffff;
+			}
+		}
+
+		.btn-dark {
+			height: 30px;
+			line-height: 30px;
+			margin-left: 20px;
+		}
+
+		h3 {
+			font-size: 40px;
+			line-height: 48px;
+			margin: 15px 0 30px;
+			font-weight: $bold;
+		}
+
+		p {
+			font-size: 18px;;
+			font-weight: $light;
+			line-height: 28px;
+			margin-bottom: 35px;
+		}
+
+		.grup-btn-preview {
+			display: flex;
+		}
+
+		.btn-assista {
+			margin-right: 20px;
+
+			.ico-svg {
+				margin-right: 10px;
+			}
+		}
+
+		.btn-mais-videos, .btn-assista {
+			min-width: 170px;
+		}
+	}
+}
+
+//.slide-video {
+	//padding: 40px 0 80px;
+//}
+
+.carousel-post {
+	.owl-dots {
+		display: none;
+	}
+}
+
+ /*
+ *  fim post / post vídeo
+ */

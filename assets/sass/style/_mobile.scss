@@ -1,5 +1,315 @@
+ /*
+ *  mobile
+ */
 
-
-@media all and (max-width: 768px){
-	
+.box-container {
+	max-width: 100%!important; 
+	width: 100%!important;
+	padding: 0 20px!important;
+	margin: 0 auto!important;
 }
+
+.widget-tempo-resumo {
+	padding: 0;
+	border: none;
+	background: none;
+	box-shadow: none;
+
+	.tempo-header {
+		text-align: left;
+
+		.local {
+			margin: 0;
+			line-height: 29px;
+			float: right;
+		}
+
+		h3 {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.widget-tempo {
+	box-shadow: 20px 20px 60px rgba(217, 217, 217, 0.2), -20px -20px 60px #FFFFFF;
+
+	&.widget-tempo-resumo {
+		box-shadow: none;
+	}
+
+	.tempo-dia {
+		text-align: center;
+		margin-bottom: 32px;
+
+		.ico-svg {
+			margin-right: 0;
+			float: none;
+		}
+	}
+}
+
+
+.widget-tempo {
+	.tempo-min-max {
+		text-align: center;
+		float: none;
+		width: auto;
+
+		.min-max-item {
+			float: none;
+			display: inline-block;
+
+			&:first-child {
+				padding-right: 40px;
+			}
+		}
+
+		.min-max-label, .min-max-num {
+			display: block;
+		}
+
+		.min-max-label {
+			.ico-svg {
+				top: -1px;
+				margin-right: 5px;
+			}
+		}
+
+		.min-max-num {
+			margin-top: 5px;
+			font-size: 60px;
+			line-height: 44px;
+			font-weight: $light;
+
+			span {
+				font-size: 20px;
+				vertical-align: top;
+				position: relative;
+				top: -12px;
+			}
+		}
+
+		@media all and (max-width: 500px){
+			width: 100%;
+			padding-left: 0;
+
+			.min-max-item {
+				float: none;
+				display: inline-block;
+			}
+		}
+	}
+}
+
+
+.row-scroll {
+	margin: 0 -20px;
+	padding: 0 20px;
+	overflow-y: scroll;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+	-ms-overflow-style: none;
+	-webkit-scrollbar: none;
+
+	.row-scroll-over {
+
+	}
+
+	.owl-item {
+		width: 300px;
+		float: left;
+		margin-right: 20px;
+	}
+}
+
+
+.header-group-btn {
+	margin-bottom: 10px; 
+
+	h2 {
+		font-size: 28px;
+	}
+
+	.btn-seta {
+		background: none;
+		border: none;
+		height: 30px;
+		margin-left: auto;
+		padding: 0;
+	}
+	
+	&.list-noticia {
+		.row-scroll {
+			padding: 0;
+			margin: 0;
+		}
+
+		.interesses-post {
+			margin: 0px -5px 20px;
+			white-space: nowrap;
+		}
+	}
+}
+
+.preview-video {
+	.row {
+		margin-bottom: 0;
+	}
+	.content-preview-video {
+		margin-bottom: 30px;
+
+		h2, .text-branco {
+			color: #ffffff;
+		}
+
+		h3 { 
+			font-size: 28px;
+			line-height: 32px;
+			margin-bottom: 15px;
+			margin-top: 25px;
+			color: #ffffff;
+			font-weight: $medium;
+		}
+
+		p {
+			font-size: 16px;
+			line-height: 24px;
+			margin-bottom: 20px;
+			opacity: .8;
+			color: #ffffff;
+		}
+	}
+
+	.post-img {
+		width: 100%;
+		display: block;
+		//height: 325px;
+		overflow: hidden;
+		border-radius: 4px;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		position: relative;
+
+		&:before {
+			content: '';
+			background-color: rgba(#292B27, .5);
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 0;
+			width: 100%;
+			height: 100%;
+		}
+
+		img {
+			object-fit: cover;
+		}
+
+		.ico-svg {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			z-index: 1;
+		}
+	}
+}
+
+.list-post {
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+	margin-bottom: 25px;
+	border-bottom: 1px solid $cor-border;
+	width: auto;
+	margin-left: -20px;
+	margin-right: -20px;
+	padding: 0 20px 20px;
+
+	.post-img {
+		flex: 0 0 95px;
+		border-radius: 4px;
+		margin: 0px;
+		height: 95px;
+		overflow: hidden;
+
+		img {
+			object-fit: cover;
+			width: 100%;
+			height: 95px;
+		}
+
+		&:before {
+			display: none;
+		}
+	}
+
+	.list-post-content {
+		background: none;
+		padding: 5px 15px 5px 0;
+	}
+
+	&.video {
+		flex-direction: row;
+		align-items: center;
+		border: none;
+		padding: 0;
+		margin: 0 0 25px;
+
+		.post-img {
+			flex: 0 0 140px;
+			height: auto;
+
+			img {
+				width: 100%;
+				height: 95px;
+			}
+		}
+
+		.list-post-content {
+			background: none;
+			padding: 5px 0 5px 15px;
+		}
+	}
+}
+
+.aspect-ratio-box {
+	height: 0;
+	overflow: hidden;
+	padding-top: 591.44px / 1127.34px * 100%;
+	position: relative;
+}
+.aspect-ratio-box-inside {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.flexbox-centering {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+//}
+
+@media all and (max-width: 380px){
+	.list-post.video {
+		.post-img {
+			flex: 0 0 100px;
+			max-height: 80px;
+		}
+
+		.list-post-content {
+			padding: 0px 10px;
+		}
+	}
+}
+
+ /*
+ *  fim mobile
+ */

@@ -15,22 +15,13 @@
 }
 
 
-@mixin gradiente3($angulo,$opacity,$grad1, $grad2, $grad3) {
+@mixin gradiente($angulo,$cor1,$cor2) {
 	$angulo: $angulo+deg;
-	background: $grad1; /* For browsers that do not support gradients */
-	background: -webkit-linear-gradient($angulo ,rgba($grad1, $opacity), rgba($grad2, $opacity), rgba($grad3, $opacity)); /* For Safari 5.1 to 6.0 */
-	background: -o-linear-gradient($angulo ,rgba($grad1, $opacity), rgba($grad2, $opacity), rgba($grad3, $opacity)); /* For Opera 11.1 to 12.0 */
-	background: -moz-linear-gradient($angulo ,rgba($grad1, $opacity), rgba($grad2, $opacity), rgba($grad3, $opacity)); /* For Firefox 3.6 to 15 */
-	background: linear-gradient($angulo ,rgba($grad1, $opacity), rgba($grad2, $opacity), rgba($grad3, $opacity)); /* Standard syntax */
-}
-
-@mixin gradiente2($angulo,$opacity,$grad1, $grad2) {
-	$angulo: $angulo+deg;
-	background: $grad1; /* For browsers that do not support gradients */
-	background: -webkit-linear-gradient($angulo ,rgba($grad1, $opacity), rgba($grad2, $opacity)); /* For Safari 5.1 to 6.0 */
-	background: -o-linear-gradient($angulo ,rgba($grad1, $opacity), rgba($grad2, $opacity)); /* For Opera 11.1 to 12.0 */
-	background: -moz-linear-gradient($angulo ,rgba($grad1, $opacity), rgba($grad2, $opacity)); /* For Firefox 3.6 to 15 */
-	background: linear-gradient($angulo ,rgba($grad1, $opacity), rgba($grad2, $opacity)); /* Standard syntax */
+	background: $cor1;
+	background: -webkit-linear-gradient($angulo,$cor1,$cor2);
+	background: -o-linear-gradient($angulo,$cor1,$cor2);
+	background: -moz-linear-gradient($angulo,$cor1,$cor2);
+	background: linear-gradient($angulo,$cor1,$cor2);
 }
 
 @mixin background-size($value) {

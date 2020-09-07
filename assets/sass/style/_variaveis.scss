@@ -3,47 +3,31 @@ $padding-section: 40px;
 $padding-container: 75px;
 $padding-col: 15px;
 
-$font-size: .95rem;
-$line-height: 1.35rem;
+$font-size: 14px;
+$line-height: 22px;
 
 $cor-txt: #343731;
 $cor-txt-claro: #B2B2B2;
 
-/* CORES */
-$cor1: #19AAE3; // azul
+$cor-border: #f6f6f6;
 
-$cor2: #7BC8ED; // azul
-$cor3: #337DA1; // azul medio
-$cor4: #EC1F31; // vermelho
+// CORES
+$cor1: #19AAE3;
+$principal: #8EC044;
+$secundario: #19AAE3;
 
-$verde-limao: #8cc63f; //verde-limão
-$cinza: #DCDCDC;
-$cinza-claro: #999999;
-$laranja: #CB521C;
-$lilas: #8D1C7B;
-$verde-claro: #5EA47E;
-$verde: #007f3d;
-$amarelo: #f5db00;
-$azul: #3e4095;
-$vermelho: #801700;
-$azul-celeste: #35cbc9;
-$rosa: #ed7db5;
-$dourado: #a4925f;
-$bege: #a4925f;
-$bordo: #790000;
-$marrom: #99552b;
-$roxo: #ffffff;
-$pink: #f4364c;
+$bgescuro: #1E201C;
+$bgclaro: #fefefe;
 
-$bgescuro: #353535;
-$bgclaro: #fbfbfb;
 
+// FONTES
+$font: 'Roboto', sans-serif;
+$font-family: $font;
+$font-titulo: $font;
 
 $light: 300;
-$regular: 400;
-$medium: 500;
+$regular: 500;
+$medium: 600;
 $semi-bold: 700;
 $bold: 700;
 $extra-bold: 900; 
-
-$hSlide: 400px;

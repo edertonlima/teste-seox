@@ -1,0 +1,196 @@
+/*
+ *  button
+ */
+
+.btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	text-decoration: none;
+
+	font-weight: $medium;
+	border: 1px solid $cor-txt;
+	background-color: #ffffff;
+	color: $cor-txt;
+	border-radius: 4px;
+	padding: 0 30px;
+	height: 50px;
+	line-height: 50px;
+	font-size: 14px;
+	@include box-sizing;	
+	@include animacao;
+
+	&:hover {
+		text-decoration: none;		
+	}
+
+	&.btn-full {
+		width: 100%;
+	}
+
+
+	&.btn-esuro {
+		border-color: rgba(#ffffff, .5);
+		background-color: transparent;
+		color: #ffffff;
+
+		&:hover {
+			background-color: #ffffff;
+			color: $bgescuro;
+		}
+	}
+
+	&.btn-cadastre {
+		border-color: rgba(#ffffff, .5);
+		background-color: $cor1;
+		color: #ffffff;
+
+		&:hover {
+			background-color: darken($cor1, 5%);
+		}
+	}
+
+	&.btn-previsao {
+		border-color: #ffffff;
+		background-color: #ffffff;
+		color: $cor1;
+		font-weight: $medium;
+		font-size: 14px;
+		box-shadow: -20px -20px 60px #FFFFFF, 20px 20px 60px rgba(217, 217, 217, 0.2);
+
+		span {
+			margin-right: 12px;
+		}
+
+		&:hover {
+			border-color: $cor1;
+			background-color: $cor1;
+			color: #ffffff;
+
+			.ico-svg {
+				background-image: url("data:image/svg+xml,%3Csvg width='12' height='15' viewBox='0 0 12 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M6.43849 14.6142L6 15L5.56151 14.6142C1.87421 11.3696 0 8.53659 0 6.04634C0 2.51975 2.73137 0 6 0C9.26863 0 12 2.51975 12 6.04634C12 8.53659 10.1258 11.3696 6.43849 14.6142ZM1.33333 6.04634C1.33333 7.96049 2.87107 10.3685 6 13.2102C9.12893 10.3685 10.6667 7.96049 10.6667 6.04634C10.6667 3.28961 8.55726 1.34363 6 1.34363C3.44274 1.34363 1.33333 3.28961 1.33333 6.04634ZM6 2.68726C7.84095 2.68726 9.33333 4.19117 9.33333 6.04634C9.33333 7.9015 7.84095 9.40541 6 9.40541C4.15905 9.40541 2.66667 7.9015 2.66667 6.04634C2.66667 4.19117 4.15905 2.68726 6 2.68726ZM6 4.03089C4.89543 4.03089 4 4.93324 4 6.04634C4 7.15944 4.89543 8.06178 6 8.06178C7.10457 8.06178 8 7.15944 8 6.04634C8 4.93324 7.10457 4.03089 6 4.03089Z' fill='%23ffffff'/%3E%3C/svg%3E%0A");
+			}
+		}
+	}
+
+	&.btn-resumo {
+		font-size: 12px;
+		border-color: #ffffff;
+		background-color: #ffffff;
+		color: $cor-txt-claro;
+		font-weight: $regular;
+
+		.ico-svg {
+			margin-right: 12px;
+		}
+
+		&:hover {
+			border-color: $cor-border;
+			background-color: $bgclaro;
+			color: $cor-txt-claro;
+		}
+	}
+
+	&.btn-veja-mais {
+		border-color: #ffffff;
+		background-color: #ffffff;
+		color: $cor1;
+		box-shadow: -20px -20px 60px #FFFFFF, 20px 20px 60px rgba(217, 217, 217, 0.2);
+		width: 195px;
+		max-width: 100%;
+		padding: 0;
+
+		&:hover {
+			border-color: $cor1;
+			background-color: $cor1;
+			color: #ffffff;
+		}
+	}
+
+	&.btn-item-interesses {
+		background: rgba($cor1, 0.1);
+		border-color: transparent;
+		border-radius: 4px;
+		padding: 0 15px;
+		height: 30px;
+		line-height: 30px;
+		font-weight: $bold;
+		font-size: 14px;
+		text-transform: uppercase;
+		color: $cor1;
+		display: inline-block;
+
+		&:hover {
+			color: $cor1;
+			background: #ffffff;
+			border-color: rgba($cor1, 0.25);
+		}
+	}
+
+	&.btn-default {
+		background-color: transparent;
+		color: $cor-txt-claro;
+		border-color: $cor-border;
+		font-weight: $regular;
+		margin-left: 10px;
+
+		&:hover {
+			color: $cor-txt;
+			background-color: $bgclaro;
+		}
+	}
+
+
+	&.btn-principal {
+		background-color: $principal;
+		border-color: $principal;
+		color: #ffffff;
+
+		&:hover {
+			background-color: darken($principal, 10%); 
+			border-color: darken($principal, 10%); 
+		}
+	}
+
+	&.btn-secundario {
+		background-color: $secundario;
+		border-color: $secundario;
+		color: #ffffff;
+
+		&:hover {
+			background-color: darken($secundario, 10%); 
+			border-color: darken($secundario, 10%); 
+		}
+	}
+
+	&.btn-branco {
+		background-color: #ffffff;
+		border-color: #ffffff;
+		color: $cor-txt;
+
+		&:hover {
+			background-color: rgba(#ffffff,.75); 
+			border-color: rgba(#ffffff,0); 
+			color: $cor-txt;
+		}
+
+		&.btn-transparent {
+			background: none;
+			color: #ffffff;
+			border-color: rgba(#ffffff,.5); 
+
+			&:hover {
+				background-color: #ffffff;
+				border-color: #ffffff;
+				color: $cor-txt;				
+			}
+		}
+	}
+}
+
+/*
+ *  fim button
+ */
+
+ 

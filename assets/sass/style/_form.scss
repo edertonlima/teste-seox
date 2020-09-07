@@ -42,8 +42,8 @@ form {
 
 	label {
 		padding-left: 17px;
-		font-size: 1rem;
-		line-height: 1.25rem;
+		font-size: 16px;
+		line-height: 20px;
 		margin-bottom: 3px;
 		display: inline-block;
 		cursor: pointer;
@@ -89,7 +89,7 @@ form {
 		}
 
 		input {
-			font-size: .75rem;
+			font-size: 14px;
 			padding-left: 25px;
 		}
 	}
@@ -99,51 +99,6 @@ form {
 label:hover:before {
   border: 1px solid #4778d9!important;
 }
-/*
-button, input[type='submit'], .button { 
-	display: inline-block;
-	width: auto;
-	height: $height_input;
-	line-height: $height_input;
-	color: $cor-txt;
-	font-weight: $bold;
-	font-size: 1.125rem; 
-	text-align: center;
-	padding: 0 15px;
-	border-radius: 16px;
-	border: 1px solid $cor1;
-	cursor: pointer;
-	background-color: transparent;
-	@include animacao;
-	@include box-sizing();
-
-	i {
-		@include animacao;
-	}
-
-	&:hover {
-		background-color: $cor-txt;
-		color: #ffffff;
-	}
-
-	&.grande {
-		line-height: 53px;
-		height: 53px;
-		font-size: 1.25rem;
-		padding: 0 25px;
-	}
-
-	&.pequeno {
-		height: 39px;
-		line-height: 39px;
-		font-size: .75rem;
-		text-transform: none;
-	}
-
-	&.btn-full {
-		width: 100%;
-	}
-}*/
 
 .select {
 	overflow: hidden;
@@ -164,7 +119,7 @@ button, input[type='submit'], .button {
 		padding-right: 135px;
 		background-color: transparent;
 		font-weight: $light;
-		font-size: 1rem; 
+		font-size: 16px; 
 		color: $cor-txt;
 		box-sizing: content-box;
 		position: relative;
@@ -189,14 +144,14 @@ button, input[type='submit'], .button {
 
 .msg-form {
 	display: block;
-	font-size: 1rem;
+	font-size: 16px;
 	margin-bottom: 20px;
 	font-weight: $regular;
 	color: $cor1;
 
 	strong {
 		display: block;
-		font-size: 1rem;
+		font-size: 16px;
 	}
 
 	&.off {

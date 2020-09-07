@@ -1,43 +1,91 @@
-@import 'bootstrap4.0/bootstrap';
+@mixin separacao { 
 
+/* 
+
+		*
+		*
+		*
+		*
+		*
+		*
+		*
+		*
+		*
+		*
+		*
+		*
+
+*/
+
+}
+
+
+//@import 'bootstrap4.0/bootstrap';
+
+//@import 'style/_fonts';
 @import 'style/_mixin';
-@import 'style/_reset';
-@import 'style/_variaveis';
-@import 'style/_fonts';
+//@import 'style/_reset';
+//@include separacao;
 
+@import 'style/_variaveis'; 
 
 // estrutura
-@import 'style/_estrutura';
-@import 'style/_elementos'; 
+//@import 'style/_estrutura';
+//@include separacao;
+
+//@import 'style/_grid';
+//@include separacao;
+
+
+// owl carousel
+@import 'owl-carousel/owl.carousel'; 
+@include separacao;
+
+
+@import 'style/_button'; 
+@include separacao;
+
 //@import 'style/_form';
 //@import 'style/_modal';
 //@import 'style/_nav';
 //@import 'style/_slide';
 //@import 'style/_header';
 //@import 'style/_footer';
-@import 'style/_cores';  
+
+@import 'style/_cores';
+@include separacao;
 
 
 // plugins
 // scrollbar
 //@import 'style/_scrollbar';  
 
-// owl carousel
-@import 'owl-carousel/owl.carousel'; 
-@import 'owl-carousel/_theme.default';
+
 
 // horizontal timeline
 //@import 'horizontal-timeline/horizontal-timeline'; 
 
 
 // widget
-@import 'style/widget/_tempo'; 
+@import 'style/widget/_tempo';
+@include separacao;
+
 @import 'style/widget/_anuncio'; 
+@include separacao;
 
 
 // page
-@import 'style/page/_page'; 
+@import 'style/page/_page';
+@include separacao;
+
+@import 'style/page/_post-type';
+@include separacao;
+
+
+// ico SVG
+@import 'style/_ico-svg';
+//@include separacao;
 
 
 // mobile
-@import 'style/_mobile'; 
+//@import 'style/_mobile'; 

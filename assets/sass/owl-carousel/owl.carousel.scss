@@ -1,5 +1,105 @@
+
+/*
+ *  owl carousel
+ */
+
+
 @import 'core';
-@import 'animate';
-@import 'autoheight';
-@import 'lazyload';
-@import 'video';
+//@import 'animate';
+//@import 'autoheight';
+//@import 'lazyload';
+//@import 'video';
+
+@import 'theme.default';
+
+// custom específio
+
+.owl-carousel {
+	.owl-stage-outer {
+		width: 101%;
+	}
+
+	&.owl-theme {
+
+		.owl-nav {
+			position: absolute;
+			height: 0;
+			top: 50%;
+			width: 100%;
+
+			.owl-prev, .owl-next {
+				position: absolute;
+				top: -3px;
+				width: 25px;
+				height: 25px;
+				border: 1px solid rgba($cor1,.3);
+				border-radius: 4px;
+				line-height: 0;
+				background: transparent;
+				cursor: pointer;
+
+				i {
+					font-size: 10px;
+					color: $cor1;
+				}
+
+				&.disabled {
+					opacity: .3;
+				}
+
+				&:hover:not(.disabled) {
+					opacity: .3;
+				}
+			}
+
+			.owl-prev {
+				left: -50px;
+			}
+
+			.owl-next {
+				right: -50px;
+			}
+
+			@media all and (max-width: 700px){
+				display: none;
+			}
+		}
+
+		.owl-dots {
+			margin-top: 30px;
+
+			.owl-dot {
+				margin: 0 6px;
+				background: transparent;
+				padding: 0;
+
+				span {
+					margin: 0;
+					width: 8px;
+					height: 8px;
+					background: rgba($cor1, .3);
+					cursor: pointer;
+				}
+
+				&.active {
+					span {
+						background: $cor1;
+					}
+				}
+			}
+		}
+	}
+
+	&.carousel-tempo-dia {
+		&.owl-theme {
+
+			.owl-nav {		
+				margin-top: -30px;
+			}
+		}
+	}
+}
+
+/*
+ *  fim owl carousel
+ */

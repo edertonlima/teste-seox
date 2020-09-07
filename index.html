@@ -15,7 +15,7 @@
 	<meta name="language" content="pt-br" />
 	<meta name="title" content="" />
 
-	<title>Teste SEOX</title>
+	<title></title>
 
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css" media="screen" />
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" media="screen" />
@@ -26,15 +26,17 @@
 	<header></header>
 
 	<section class="box-section">
-		<div class="container">
-			<div class="row row-full-1100px">
+		<div class="">
+			<div class="row">
 				
 				<div class="col-9">
 
 					<div class="widget-tempo widget-tempo-resumo">
 						<div class="box-anuncio box-anuncio-header">
-							<span class="btn-anuncio-close"><img src="assets/images/ico-close.svg" alt="Fechar anúncio"></span>
-							<img src="assets/images/box-anuncio-header.svg" alt="Publicidade">
+							<span class="btn-anuncio-close">
+								<img src="http://moduloshtml.seox.com.br/wp-content/uploads/2020/08/ico-close.svg" alt="Fechar anúncio">
+							</span>
+							<img src="http://moduloshtml.seox.com.br/wp-content/uploads/2020/08/box-anuncio-header.svg" alt="Publicidade">
 						</div>
 
 						<div class="tempo-container">
@@ -43,15 +45,15 @@
 								<h3>Próximos 10 dias</h3>
 								<span class="data">(09/03 à 18/03/2020)</span>
 
-								<div class="local">
+								<a href="#" class="local">
 									São Paulo - SP
-									<img src="assets/images/ico-local.svg" alt="São Paulo - SP">
-								</div>
+									<span class="ico-svg ico-local"></span>
+								</a>
 							</div>
 
 							<div class="tempo-content">
 								<div class="tempo-dia">
-									<img src="assets/images/ico-dia-tempo-1.svg" alt="">
+									<span class="ico-svg ico-tempo-sol-parcial"></span>
 									<span class="dia">segunda-feira</span>
 									<span class="data">09/03/2020</span>
 								</div>
@@ -59,7 +61,7 @@
 								<div class="tempo-min-max">
 									<div class="min-max-item">
 										<span class="min-max-label">
-											<img src="assets/images/ico-min.svg" alt="MIN">
+											<span class="ico-svg ico-minimo"></span>
 											MIN
 										</span>
 										<span class="min-max-num">
@@ -69,7 +71,7 @@
 
 									<div class="min-max-item">
 										<span class="min-max-label">
-											<img src="assets/images/ico-max.svg" alt="MAX">
+											<span class="ico-svg ico-maximo"></span>
 											MAX
 										</span>
 										<span class="min-max-num">
@@ -80,27 +82,37 @@
 
 								<div class="tempo-info">
 									<div class="info-item">
-										<div><img src="assets/images/ico-info-temp-1.svg" alt="30mm"></div>
+										<div>
+											<span class="ico-svg ico-chuva"></span>
+										</div>
 										<span>30mm</span>
 									</div>
 
 									<div class="info-item">
-										<div><img src="assets/images/ico-info-temp-2.svg" alt="62%"></div>
+										<div>
+											<span class="ico-svg ico-umidade"></span>
+										</div>
 										<span>62%</span>
 									</div>
 
 									<div class="info-item">
-										<div><img src="assets/images/ico-info-temp-3.svg" alt="SE 17km/h"></div>
+										<div>
+											<span class="ico-svg ico-vento"></span>
+										</div>
 										<span>SE 17km/h</span>
 									</div>
 
 									<div class="info-item">
-										<div><img src="assets/images/ico-info-temp-4.svg" alt="06h02"></div>
+										<div>
+											<span class="ico-svg ico-nascer-sol"></span>
+										</div>
 										<span>06h02</span>
 									</div>
 
 									<div class="info-item">
-										<div><img src="assets/images/ico-info-temp-5.svg" alt="18h05"></div>
+										<div>
+											<span class="ico-svg ico-por-sol"></span>
+										</div>
 										<span>18h05</span>
 									</div>
 								</div>
@@ -110,14 +122,62 @@
 
 				</div>
 				<div class="col-3">
-					<div class="registre-receba">
+					<div class="registre-receba" style="display: none;">
 						<h4 class="center">Cadastre e receba a previsão de chuvas de até 7 meses.</h4>
 						<a href="#" class="btn btn-full btn-cadastre">Cadastre-se</a>
+					</div>
+
+					<div class="minha-area-resumo">
+						<h3 class="center bold">Bem vindo de volta, Ivan!</h3>
+						<p class="txt-mini text-center">O que você gostaria de ver hoje?</p>
+						
+						<div class="tit-resumo">
+							<span class="ico-svg ico-chuva"></span>
+							<span class="bold">PREVISÃO DE CHUVAS</span>
+						</div>
+
+						<div class="previsao-chuva">
+							<div class="item-previsao">
+								<a href="#" class="btn btn-full" title="10 dias">10 dias</a>
+							</div>
+							
+							<div class="item-previsao">
+								<a href="#" class="btn btn-full" title="45 dias">45 dias</a>
+							</div>
+							
+							<div class="item-previsao">
+								<a href="#" class="btn btn-full" title="90 dias">90 dias</a>
+							</div>
+
+							<div class="item-previsao">								
+								<a href="#" class="btn btn-full" title="7 meses">7 meses</a>
+							</div>
+						</div>
+
+						<a href="#" class="btn btn-previsao btn-full btn-ico btn-center">
+							<span class="ico-svg ico-localizacao"></span>
+							Definir localização
+						</a>
+						
+						<div class="box-btn-resumo">
+							<a href="#" class="btn btn-resumo btn-full btn-ico btn-center">
+								<span class="ico-svg ico-perfil"></span>
+								Meu perfil
+							</a>
+
+							<a href="#" class="btn btn-resumo btn-full btn-ico btn-center">
+								<span class="ico-svg ico-interesses"></span>
+								Meus interesses
+							</a>
+						</div>
 					</div>
 				</div>
 
 			</div>
 
+	
+	<div class="row">
+		<div class="col-12">
 
 			<div class="carousel-tempo-dia carousel-itens owl-carousel owl-theme owl-loaded">
 				<div class="owl-stage-outer">
@@ -129,7 +189,7 @@
 								<div class="tempo-container">
 									<div class="tempo-content">
 										<div class="tempo-dia">
-											<img src="assets/images/ico-dia-tempo-2.svg" alt="">
+											<span class="ico-svg ico-tempo-sol"></span>
 											<span class="dia">terça-feira</span>
 											<span class="data">10/03/2020</span>
 										</div>
@@ -137,7 +197,7 @@
 										<div class="tempo-min-max">
 											<div class="min-max-item">
 												<span class="min-max-label">
-													<img src="assets/images/ico-min.svg" alt="MIN">
+													<span class="ico-svg ico-minimo"></span>
 												</span>
 												<span class="min-max-num">
 													13<span>°C</span>
@@ -146,7 +206,7 @@
 
 											<div class="min-max-item">
 												<span class="min-max-label">
-													<img src="assets/images/ico-max.svg" alt="MAX">
+													<span class="ico-svg ico-maximo"></span>
 												</span>
 												<span class="min-max-num">
 													26<span>°C</span>
@@ -156,29 +216,39 @@
 
 										<div class="tempo-info">
 											<div class="info-item">
-												<div><img src="assets/images/ico-info-temp-1.svg" alt="30mm"></div>
+												<div>
+													<span class="ico-svg ico-chuva"></span>
+												</div>
 												<span>30mm</span>
 											</div>
 
 											<div class="info-item">
-												<div><img src="assets/images/ico-info-temp-2.svg" alt="62%"></div>
+												<div>
+													<span class="ico-svg ico-umidade"></span>
+												</div>
 												<span>62%</span>
 											</div>
 
 											<div class="info-item">
-												<div><img src="assets/images/ico-info-temp-3.svg" alt="SE 17km/h"></div>
+												<div>
+													<span class="ico-svg ico-vento"></span>
+												</div>
 												<span>SE 17km/h</span>
 											</div>
 
 											<div class="info-item">
-												<div><img src="assets/images/ico-info-temp-4.svg" alt="06h02"></div>
+												<div>
+													<span class="ico-svg ico-nascer-sol"></span>
+												</div>
 												<span>06h02</span>
 											</div>
 
 											<div class="info-item">
-												<div><img src="assets/images/ico-info-temp-5.svg" alt="18h05"></div>
+												<div>
+													<span class="ico-svg ico-por-sol"></span>
+												</div>
 												<span>18h05</span>
-											</div>
+											</div>											
 										</div>
 									</div>
 								</div>
@@ -190,7 +260,7 @@
 								<div class="tempo-container">
 									<div class="tempo-content">
 										<div class="tempo-dia">
-											<img src="assets/images/ico-dia-tempo-3.svg" alt="">
+											<span class="ico-svg ico-tempo-sol-chuva"></span>
 											<span class="dia">quarta-feira</span>
 											<span class="data">11/03/2020</span>
 										</div>
@@ -198,7 +268,7 @@
 										<div class="tempo-min-max">
 											<div class="min-max-item">
 												<span class="min-max-label">
-													<img src="assets/images/ico-min.svg" alt="MIN">
+													<span class="ico-svg ico-minimo"></span>
 												</span>
 												<span class="min-max-num">
 													13<span>°C</span>
@@ -207,7 +277,7 @@
 
 											<div class="min-max-item">
 												<span class="min-max-label">
-													<img src="assets/images/ico-max.svg" alt="MAX">
+													<span class="ico-svg ico-maximo"></span>
 												</span>
 												<span class="min-max-num">
 													26<span>°C</span>
@@ -217,27 +287,37 @@
 
 										<div class="tempo-info">
 											<div class="info-item">
-												<div><img src="assets/images/ico-info-temp-1.svg" alt="30mm"></div>
+												<div>
+													<span class="ico-svg ico-chuva"></span>
+												</div>
 												<span>30mm</span>
 											</div>
 
 											<div class="info-item">
-												<div><img src="assets/images/ico-info-temp-2.svg" alt="62%"></div>
+												<div>
+													<span class="ico-svg ico-umidade"></span>
+												</div>
 												<span>62%</span>
 											</div>
 
 											<div class="info-item">
-												<div><img src="assets/images/ico-info-temp-3.svg" alt="SE 17km/h"></div>
+												<div>
+													<span class="ico-svg ico-vento"></span>
+												</div>
 												<span>SE 17km/h</span>
 											</div>
 
 											<div class="info-item">
-												<div><img src="assets/images/ico-info-temp-4.svg" alt="06h02"></div>
+												<div>
+													<span class="ico-svg ico-nascer-sol"></span>
+												</div>
 												<span>06h02</span>
 											</div>
 
 											<div class="info-item">
-												<div><img src="assets/images/ico-info-temp-5.svg" alt="18h05"></div>
+												<div>
+													<span class="ico-svg ico-por-sol"></span>
+												</div>
 												<span>18h05</span>
 											</div>
 										</div>
@@ -251,7 +331,7 @@
 								<div class="tempo-container">
 									<div class="tempo-content">
 										<div class="tempo-dia">
-											<img src="assets/images/ico-dia-tempo-4.svg" alt="">
+											<span class="ico-svg ico-tempo-raio"></span>
 											<span class="dia">quinta-feira</span>
 											<span class="data">12/03/2020</span>
 										</div>
@@ -259,7 +339,7 @@
 										<div class="tempo-min-max">
 											<div class="min-max-item">
 												<span class="min-max-label">
-													<img src="assets/images/ico-min.svg" alt="MIN">
+													<span class="ico-svg ico-minimo"></span>
 												</span>
 												<span class="min-max-num">
 													13<span>°C</span>
@@ -268,7 +348,7 @@
 
 											<div class="min-max-item">
 												<span class="min-max-label">
-													<img src="assets/images/ico-max.svg" alt="MAX">
+													<span class="ico-svg ico-maximo"></span>
 												</span>
 												<span class="min-max-num">
 													26<span>°C</span>
@@ -278,27 +358,37 @@
 
 										<div class="tempo-info">
 											<div class="info-item">
-												<div><img src="assets/images/ico-info-temp-1.svg" alt="30mm"></div>
+												<div>
+													<span class="ico-svg ico-chuva"></span>
+												</div>
 												<span>30mm</span>
 											</div>
 
 											<div class="info-item">
-												<div><img src="assets/images/ico-info-temp-2.svg" alt="62%"></div>
+												<div>
+													<span class="ico-svg ico-umidade"></span>
+												</div>
 												<span>62%</span>
 											</div>
 
 											<div class="info-item">
-												<div><img src="assets/images/ico-info-temp-3.svg" alt="SE 17km/h"></div>
+												<div>
+													<span class="ico-svg ico-vento"></span>
+												</div>
 												<span>SE 17km/h</span>
 											</div>
 
 											<div class="info-item">
-												<div><img src="assets/images/ico-info-temp-4.svg" alt="06h02"></div>
+												<div>
+													<span class="ico-svg ico-nascer-sol"></span>
+												</div>
 												<span>06h02</span>
 											</div>
 
 											<div class="info-item">
-												<div><img src="assets/images/ico-info-temp-5.svg" alt="18h05"></div>
+												<div>
+													<span class="ico-svg ico-por-sol"></span>
+												</div>
 												<span>18h05</span>
 											</div>
 										</div>
@@ -312,7 +402,7 @@
 								<div class="tempo-container">
 									<div class="tempo-content">
 										<div class="tempo-dia">
-											<img src="assets/images/ico-dia-tempo-2.svg" alt="">
+											<span class="ico-svg ico-tempo-sol"></span>
 											<span class="dia">sexta-feira</span>
 											<span class="data">13/03/2020</span>
 										</div>
@@ -320,7 +410,7 @@
 										<div class="tempo-min-max">
 											<div class="min-max-item">
 												<span class="min-max-label">
-													<img src="assets/images/ico-min.svg" alt="MIN">
+													<span class="ico-svg ico-minimo"></span>
 												</span>
 												<span class="min-max-num">
 													13<span>°C</span>
@@ -329,7 +419,7 @@
 
 											<div class="min-max-item">
 												<span class="min-max-label">
-													<img src="assets/images/ico-max.svg" alt="MAX">
+													<span class="ico-svg ico-maximo"></span>
 												</span>
 												<span class="min-max-num">
 													26<span>°C</span>
@@ -339,27 +429,37 @@
 
 										<div class="tempo-info">
 											<div class="info-item">
-												<div><img src="assets/images/ico-info-temp-1.svg" alt="30mm"></div>
+												<div>
+													<span class="ico-svg ico-chuva"></span>
+												</div>
 												<span>30mm</span>
 											</div>
 
 											<div class="info-item">
-												<div><img src="assets/images/ico-info-temp-2.svg" alt="62%"></div>
+												<div>
+													<span class="ico-svg ico-umidade"></span>
+												</div>
 												<span>62%</span>
 											</div>
 
 											<div class="info-item">
-												<div><img src="assets/images/ico-info-temp-3.svg" alt="SE 17km/h"></div>
+												<div>
+													<span class="ico-svg ico-vento"></span>
+												</div>
 												<span>SE 17km/h</span>
 											</div>
 
 											<div class="info-item">
-												<div><img src="assets/images/ico-info-temp-4.svg" alt="06h02"></div>
+												<div>
+													<span class="ico-svg ico-nascer-sol"></span>
+												</div>
 												<span>06h02</span>
 											</div>
 
 											<div class="info-item">
-												<div><img src="assets/images/ico-info-temp-5.svg" alt="18h05"></div>
+												<div>
+													<span class="ico-svg ico-por-sol"></span>
+												</div>
 												<span>18h05</span>
 											</div>
 										</div>
@@ -373,7 +473,7 @@
 								<div class="tempo-container">
 									<div class="tempo-content">
 										<div class="tempo-dia">
-											<img src="assets/images/ico-dia-tempo-1.svg" alt="">
+											<span class="ico-svg ico-tempo-sol-parcial"></span>
 											<span class="dia">sábado</span>
 											<span class="data">14/03/2020</span>
 										</div>
@@ -381,7 +481,7 @@
 										<div class="tempo-min-max">
 											<div class="min-max-item">
 												<span class="min-max-label">
-													<img src="assets/images/ico-min.svg" alt="MIN">
+													<span class="ico-svg ico-minimo"></span>
 												</span>
 												<span class="min-max-num">
 													13<span>°C</span>
@@ -390,7 +490,7 @@
 
 											<div class="min-max-item">
 												<span class="min-max-label">
-													<img src="assets/images/ico-max.svg" alt="MAX">
+													<span class="ico-svg ico-maximo"></span>
 												</span>
 												<span class="min-max-num">
 													26<span>°C</span>
@@ -400,27 +500,37 @@
 
 										<div class="tempo-info">
 											<div class="info-item">
-												<div><img src="assets/images/ico-info-temp-1.svg" alt="30mm"></div>
+												<div>
+													<span class="ico-svg ico-chuva"></span>
+												</div>
 												<span>30mm</span>
 											</div>
 
 											<div class="info-item">
-												<div><img src="assets/images/ico-info-temp-2.svg" alt="62%"></div>
+												<div>
+													<span class="ico-svg ico-umidade"></span>
+												</div>
 												<span>62%</span>
 											</div>
 
 											<div class="info-item">
-												<div><img src="assets/images/ico-info-temp-3.svg" alt="SE 17km/h"></div>
+												<div>
+													<span class="ico-svg ico-vento"></span>
+												</div>
 												<span>SE 17km/h</span>
 											</div>
 
 											<div class="info-item">
-												<div><img src="assets/images/ico-info-temp-4.svg" alt="06h02"></div>
+												<div>
+													<span class="ico-svg ico-nascer-sol"></span>
+												</div>
 												<span>06h02</span>
 											</div>
 
 											<div class="info-item">
-												<div><img src="assets/images/ico-info-temp-5.svg" alt="18h05"></div>
+												<div>
+													<span class="ico-svg ico-por-sol"></span>
+												</div>
 												<span>18h05</span>
 											</div>
 										</div>
@@ -434,7 +544,7 @@
 								<div class="tempo-container">
 									<div class="tempo-content">
 										<div class="tempo-dia">
-											<img src="assets/images/ico-dia-tempo-3.svg" alt="">
+											<span class="ico-svg ico-tempo-sol-parcial"></span>
 											<span class="dia">domingo</span>
 											<span class="data">15/03/2020</span>
 										</div>
@@ -442,7 +552,7 @@
 										<div class="tempo-min-max">
 											<div class="min-max-item">
 												<span class="min-max-label">
-													<img src="assets/images/ico-min.svg" alt="MIN">
+													<span class="ico-svg ico-minimo"></span>
 												</span>
 												<span class="min-max-num">
 													13<span>°C</span>
@@ -451,7 +561,7 @@
 
 											<div class="min-max-item">
 												<span class="min-max-label">
-													<img src="assets/images/ico-max.svg" alt="MAX">
+													<span class="ico-svg ico-maximo"></span>
 												</span>
 												<span class="min-max-num">
 													26<span>°C</span>
@@ -461,27 +571,37 @@
 
 										<div class="tempo-info">
 											<div class="info-item">
-												<div><img src="assets/images/ico-info-temp-1.svg" alt="30mm"></div>
+												<div>
+													<span class="ico-svg ico-chuva"></span>
+												</div>
 												<span>30mm</span>
 											</div>
 
 											<div class="info-item">
-												<div><img src="assets/images/ico-info-temp-2.svg" alt="62%"></div>
+												<div>
+													<span class="ico-svg ico-umidade"></span>
+												</div>
 												<span>62%</span>
 											</div>
 
 											<div class="info-item">
-												<div><img src="assets/images/ico-info-temp-3.svg" alt="SE 17km/h"></div>
+												<div>
+													<span class="ico-svg ico-vento"></span>
+												</div>
 												<span>SE 17km/h</span>
 											</div>
 
 											<div class="info-item">
-												<div><img src="assets/images/ico-info-temp-4.svg" alt="06h02"></div>
+												<div>
+													<span class="ico-svg ico-nascer-sol"></span>
+												</div>
 												<span>06h02</span>
 											</div>
 
 											<div class="info-item">
-												<div><img src="assets/images/ico-info-temp-5.svg" alt="18h05"></div>
+												<div>
+													<span class="ico-svg ico-por-sol"></span>
+												</div>
 												<span>18h05</span>
 											</div>
 										</div>
@@ -495,16 +615,328 @@
 			</div>
 
 		</div>
+	</div>
+
+		</div>
+	</section>
+
+	<section class="box-section preview-video">
+		<span class="bg-capa-video" style="background-image: url('http://moduloshtml.seox.com.br/wp-content/uploads/2020/08/bg-video.jpg');"></span>
+		
+		<div class="">
+			<div class="box-container">
+				<div class="row">
+
+					<div class="col-12">
+						<div class="content-preview-video">
+
+							<div class="header-group-btn">
+								<h2 class="bold text-white">
+									<span class="ico-svg ico-video"></span>
+									Vídeos
+								</h2>
+
+								<span class="label-categoria">SUL</span>
+							</div>
+							
+							<a href="#" class="btn btn-item-interesses" title="BRASIL 15 DIAS">BRASIL 15 DIAS</a>
+							
+							<h3 class="text-white">Volume de chuva será elevado no RS</h3>
+
+							<p class="text-white">Zona de Convergência Intertropical é a grande responsável pelas instabilidades.</p>
+							
+							<div class="grup-btn-preview">
+								<a href="#" class="btn btn-branco btn-assista">
+									<span class="ico-svg ico-play-video"></span>
+									Assista
+								</a>
+								<a href="#" class="btn btn-branco btn-transparent btn-mais-videos">Mais vídeos</a>
+							</div>
+							
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="box-section slide-video">
+		<div class="">
+			<div class="box-container">
+				<div class="row">
+
+					<div class="col-12">
+
+						<div class="carousel-post carousel-itens owl-carousel owl-theme owl-loaded">
+							<div class="owl-stage-outer">
+								<div class="owl-stage flex"> 
+
+
+									<div class="owl-item">
+										<article class="list-post video">
+											<a href="#" title="" class="post-img">
+												<img src="http://moduloshtml.seox.com.br/wp-content/uploads/2020/08/img-post.jpg" alt="">
+												<span class="ico-svg ico-play-video-g"></span>
+												<span class="tempo-video">5:22</span>
+											</a>
+											<div class="list-post-content">
+												<a href="#" class="post-categoria" title="Fique de olho">
+													Fique de olho
+												</a>
+												<a href="#" title="Veja a previsão do tempo para esta terça-feira em todo o Brasil">
+													<h3 class="">Veja a previsão do tempo para esta terça-feira em todo o Brasil</h3>
+												</a>
+
+												<a href="#" class="post-date" title="27/03/2020 às 13h21">
+													27/03/2020 às 13h21
+												</a>
+											</div>
+										</article>
+									</div>
+
+									<div class="owl-item">
+										<article class="list-post video">
+											<a href="#" title="" class="post-img">
+												<img src="http://moduloshtml.seox.com.br/wp-content/uploads/2020/08/img-post.jpg" alt="">
+												<span class="ico-svg ico-play-video-g"></span>
+												<span class="tempo-video">5:22</span>
+											</a>
+											<div class="list-post-content">
+												<a href="#" class="post-categoria" title="Fique de olho">
+													Fique de olho
+												</a>
+												<a href="#" title="Veja a previsão do tempo para esta terça-feira em todo o Brasil">
+													<h3 class="">Veja a previsão do tempo para esta terça-feira em todo o Brasil</h3>
+												</a>
+
+												<a href="#" class="post-date" title="27/03/2020 às 13h21">
+													27/03/2020 às 13h21
+												</a>
+											</div>
+										</article>
+									</div>
+
+									<div class="owl-item">
+										<article class="list-post video">
+											<a href="#" title="" class="post-img">
+												<img src="http://moduloshtml.seox.com.br/wp-content/uploads/2020/08/img-post.jpg" alt="">
+												<span class="ico-svg ico-play-video-g"></span>
+												<span class="tempo-video">5:22</span>
+											</a>
+											<div class="list-post-content">
+												<a href="#" class="post-categoria" title="Fique de olho">
+													Fique de olho
+												</a>
+												<a href="#" title="Veja a previsão do tempo para esta terça-feira em todo o Brasil">
+													<h3 class="">Veja a previsão do tempo para esta terça-feira em todo o Brasil</h3>
+												</a>
+
+												<a href="#" class="post-date" title="27/03/2020 às 13h21">
+													27/03/2020 às 13h21
+												</a>
+											</div>
+										</article>
+									</div>
+
+									<div class="owl-item">
+										<article class="list-post video">
+											<a href="#" title="" class="post-img">
+												<img src="http://moduloshtml.seox.com.br/wp-content/uploads/2020/08/img-post.jpg" alt="">
+												<span class="ico-svg ico-play-video-g"></span>
+												<span class="tempo-video">5:22</span>
+											</a>
+											<div class="list-post-content">
+												<a href="#" class="post-categoria" title="Fique de olho">
+													Fique de olho
+												</a>
+												<a href="#" title="Veja a previsão do tempo para esta terça-feira em todo o Brasil">
+													<h3 class="">Veja a previsão do tempo para esta terça-feira em todo o Brasil</h3>
+												</a>
+
+												<a href="#" class="post-date" title="27/03/2020 às 13h21">
+													27/03/2020 às 13h21
+												</a>
+											</div>
+										</article>
+									</div>
+
+									<div class="owl-item">
+										<article class="list-post video">
+											<a href="#" title="" class="post-img">
+												<img src="http://moduloshtml.seox.com.br/wp-content/uploads/2020/08/img-post.jpg" alt="">
+												<span class="ico-svg ico-play-video-g"></span>
+												<span class="tempo-video">5:22</span>
+											</a>
+											<div class="list-post-content">
+												<a href="#" class="post-categoria" title="Fique de olho">
+													Fique de olho
+												</a>
+												<a href="#" title="Veja a previsão do tempo para esta terça-feira em todo o Brasil">
+													<h3 class="">Veja a previsão do tempo para esta terça-feira em todo o Brasil</h3>
+												</a>
+
+												<a href="#" class="post-date" title="27/03/2020 às 13h21">
+													27/03/2020 às 13h21
+												</a>
+											</div>
+										</article>
+									</div>
+
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="box-section">
+		<div class="">
+			<div class="row">
+				
+				<div class="col-12">
+					
+					<div class="header-group-btn">
+						<h2 class="bold">Últimas notícias</h2>
+
+						<div class="interesses-post">
+							<a href="#" class="btn btn-item-interesses">algodão</a>
+							<a href="#" class="btn btn-item-interesses">trigo</a>
+						</div>
+
+						<a href="#" class="btn btn-default">Alterar interesses?</a>
+
+						<a href="#" class="btn btn-veja-mais flex-right" title="Veja mais">
+							Veja mais
+						</a>
+					</div>
+						
+
+					<div class="carousel-post carousel-itens owl-carousel owl-theme owl-loaded">
+						<div class="owl-stage-outer">
+							<div class="owl-stage flex"> 
+
+
+								<div class="owl-item">
+									<article class="list-post">
+										<a href="#" title="" class="post-img">
+											<img src="http://moduloshtml.seox.com.br/wp-content/uploads/2020/08/img-post.jpg" alt="">
+										</a>
+										<div class="list-post-content">
+											<a href="#" class="post-categoria" title="Fique de olho">
+												Fique de olho
+											</a>
+											<a href="#" title="Veja a previsão do tempo para esta terça-feira em todo o Brasil">
+												<h3 class="bold">Veja a previsão do tempo para esta terça-feira em todo o Brasil</h3>
+											</a>
+
+											<a href="#" class="post-date" title="27/03/2020 às 13h21">
+												27/03/2020 às 13h21
+											</a>
+										</div>
+									</article>
+								</div>
+
+								<div class="owl-item">
+									<article class="list-post">
+										<a href="#" title="" class="post-img">
+											<img src="http://moduloshtml.seox.com.br/wp-content/uploads/2020/08/img-post.jpg" alt="">
+										</a>
+										<div class="list-post-content">
+											<a href="#" class="post-categoria" title="Fique de olho">
+												Fique de olho
+											</a>
+											<a href="#" title="Veja a previsão do tempo para esta terça-feira em todo o Brasil">
+												<h3 class="bold">Veja a previsão do tempo para esta terça-feira em todo o Brasil</h3>
+											</a>
+
+											<a href="#" class="post-date" title="27/03/2020 às 13h21">
+												27/03/2020 às 13h21
+											</a>
+										</div>
+									</article>
+								</div>
+
+								<div class="owl-item">
+									<article class="list-post">
+										<a href="#" title="" class="post-img">
+											<img src="http://moduloshtml.seox.com.br/wp-content/uploads/2020/08/img-post.jpg" alt="">
+										</a>
+										<div class="list-post-content">
+											<a href="#" class="post-categoria" title="Fique de olho">
+												Fique de olho
+											</a>
+											<a href="#" title="Veja a previsão do tempo para esta terça-feira em todo o Brasil">
+												<h3 class="bold">Veja a previsão do tempo para esta terça-feira em todo o Brasil</h3>
+											</a>
+
+											<a href="#" class="post-date" title="27/03/2020 às 13h21">
+												27/03/2020 às 13h21
+											</a>
+										</div>
+									</article>
+								</div>
+
+								<div class="owl-item">
+									<article class="list-post">
+										<a href="#" title="" class="post-img">
+											<img src="http://moduloshtml.seox.com.br/wp-content/uploads/2020/08/img-post.jpg" alt="">
+										</a>
+										<div class="list-post-content">
+											<a href="#" class="post-categoria" title="Fique de olho">
+												Fique de olho
+											</a>
+											<a href="#" title="Veja a previsão do tempo para esta terça-feira em todo o Brasil">
+												<h3 class="bold">Veja a previsão do tempo para esta terça-feira em todo o Brasil</h3>
+											</a>
+
+											<a href="#" class="post-date" title="27/03/2020 às 13h21">
+												27/03/2020 às 13h21
+											</a>
+										</div>
+									</article>
+								</div>
+
+								<div class="owl-item">
+									<article class="list-post">
+										<a href="#" title="" class="post-img">
+											<img src="http://moduloshtml.seox.com.br/wp-content/uploads/2020/08/img-post.jpg" alt="">
+										</a>
+										<div class="list-post-content">
+											<a href="#" class="post-categoria" title="Fique de olho">
+												Fique de olho
+											</a>
+											<a href="#" title="Veja a previsão do tempo para esta terça-feira em todo o Brasil">
+												<h3 class="bold">Veja a previsão do tempo para esta terça-feira em todo o Brasil</h3>
+											</a>
+
+											<a href="#" class="post-date" title="27/03/2020 às 13h21">
+												27/03/2020 às 13h21
+											</a>
+										</div>
+									</article>
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
 	</section>
 
 	<footer></footer>
 
 </body>
 
-<script src="assets/js/jquery/jquery-3.3.1.min.js"></script>
-<script src="assets/js/popper.min.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/owl-carousel/owl.carousel.min.js"></script>
+<script src="https://ederton.com.br/preview/seox/jquery-3.3.1.min.js"></script>
+<script src="https://ederton.com.br/preview/seox/owl.carousel.min.js"></script>
 
 
 <script type="text/javascript">
@@ -515,7 +947,30 @@
 			margin:30,
 			responsiveClass:true,
 			nav:true,
-			navText: ['<i class="fas fa-chevron-left"></i>','<i class="fas fa-chevron-right"></i>'],
+			navText: ['<img src="http://moduloshtml.seox.com.br/wp-content/uploads/2020/08/ico-arrow-left.svg">','<img src="http://moduloshtml.seox.com.br/wp-content/uploads/2020/08/ico-arrow-right.svg">'],
+			//rtl:true,
+			responsive:{
+				0:{
+					items:1
+				},
+				630:{
+					items:2
+				},
+				880:{
+					items:3
+				},
+				1130:{
+					items:4
+				}
+			}
+		})
+
+		$('.carousel-post').owlCarousel({
+			loop:false,
+			margin:30,
+			responsiveClass:true,
+			nav:true,
+			navText: ['<img src="http://moduloshtml.seox.com.br/wp-content/uploads/2020/08/ico-arrow-left.svg">','<img src="http://moduloshtml.seox.com.br/wp-content/uploads/2020/08/ico-arrow-right.svg">'],
 			//rtl:true,
 			responsive:{
 				0:{
